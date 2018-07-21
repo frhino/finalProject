@@ -96,10 +96,14 @@ function onAnchorClick(event) {
     //   console.log(ts.length);
     //   rtrns.push(diff);
     // }
-
-    console.log(ts["0"]);
+    var tons = [];
+    tons = [1, 2, 3, 4, 5, 6, 7, 8 , 9, 10, 11, 12, 13, 14, 15];
+    console.log(tons);
+    console.log(tons[4]);
+    console.log(ts);
     // This function is called when we have the final list of URls to display.
     var onAllVisitsProcessed = function() {
+      console.log(ts[0] + " " + ts[1]);
       // Get the top scorring urls.
       urlArray = [];
       for (var url in urlToCount) {
